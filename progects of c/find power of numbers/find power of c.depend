@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1678452310 source:p:\progects of c\find power of c\main.c
+	<stdio.h>
+	<stdlib.h>
+
