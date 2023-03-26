@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1679751790 source:p:\progects of c\p4(sort_array_in_ascending_or_descending_order)\main.c
+	<stdio.h>
+	<stdlib.h>
+
