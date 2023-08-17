@@ -1,0 +1,16 @@
+def split_strings(strings):
+    first_half = []
+    second_half = []
+
+    for s in strings:
+        middle = len(s) // 2
+        first_half.append(s[:middle])
+        second_half.append(s[middle:])
+
+    return first_half, second_half
+
+input_strings = input("Enter a list of strings separated by spaces: ").split()
+first_half_list, second_half_list = split_strings(input_strings)
+
+print("First Half List:", first_half_list)
+print("Second Half List:", second_half_list)

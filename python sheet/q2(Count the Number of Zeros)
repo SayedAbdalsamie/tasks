@@ -1,0 +1,11 @@
+def count_zeros(number):
+    count = 0
+    while number > 0:
+        if number % 10 == 0:
+            count += 1
+        number //= 10
+    return count
+
+input_number = int(input("Enter a number: "))
+zero_count = count_zeros(input_number)
+print(f"Number of zeros in the input: {zero_count}")

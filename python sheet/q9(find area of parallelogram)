@@ -1,0 +1,22 @@
+import math
+
+class Parallelogram:
+    def __init__(self, side1, side2, angle):
+        self.side1 = side1
+        self.side2 = side2
+        self.angle = math.radians(angle)  # Convert angle to radians
+        
+    def calculate_area(self):
+        return self.side1 * self.side2 * math.sin(self.angle)
+
+# Get input from the user
+side1 = float(input("Enter the length of side 1: "))
+side2 = float(input("Enter the length of side 2: "))
+angle = float(input("Enter the angle between the sides (in degrees): "))
+
+# Create an instance of Parallelogram
+parallelogram = Parallelogram(side1, side2, angle)
+
+# Calculate and print the area
+area = parallelogram.calculate_area()
+print("The area of the parallelogram is:", area)
